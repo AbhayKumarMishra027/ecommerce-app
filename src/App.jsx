@@ -13,6 +13,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import ProductDetails from './pages/ProductDetails';
+import Wishlist from './pages/Wishlist';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 
@@ -37,6 +38,8 @@ function App() {
               
               {/* THE CRITICAL ROUTE: Matches /product/1, /product/2, etc. */}
               <Route path="/product/:id" element={<ProductDetails />} />
+
+              <Route path="/wishlist" element={<Wishlist />} />
               
               {/* Shopping Cart */}
               <Route path="/cart" element={<Cart />} />
